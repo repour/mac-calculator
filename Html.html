@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style Sheet.css">
+</head>
+<body>
+<div class="wholeCalc">
+    <div class="result">
+        <input type="text" placeholder="0" id="displayResult" onchange="logValue()">
+    </div>
+    <div class="button">
+        <button id="red">x</button>
+        <button id="yellow">-</button>
+        <button id="green">+</button>
+
+    </div>
+    <div class="firstRow">
+        <input type="button" value="AC" onclick="clearCalc()" id="clear">
+        <input type="button" value="&radic;" onclick="mathSqrt(value)">
+        <input type="button" value="%" onclick="addToDisplayResult(value)">
+        <input type="button" value="/" class="orange" onclick="addToDisplayResult(value)">
+    </div>
+    <div class="secondRow">
+        <input type="button" value="7" onclick="addToDisplayResult(value)">
+        <input type="button" value="8" onclick="addToDisplayResult(value)">
+        <input type="button" value="9" onclick="addToDisplayResult(value)">
+        <input type="button" value="*" class="orange" onclick="addToDisplayResult(value)">
+    </div>
+    <div class="thirdRow">
+        <input type="button" value="4" onclick="addToDisplayResult(value)">
+        <input type="button" value="5" onclick="addToDisplayResult(value)">
+        <input type="button" value="6" onclick="addToDisplayResult(value)">
+        <input type="button" value="-" class="orange" onclick="addToDisplayResult(value)">
+        
+      <!-- <input type="button" value="Sin" onclick="mathSin(value)">  --> 
+
+    </div>
+    <div class="fourthRow">
+        <input type="button" value="1" onclick="addToDisplayResult(value)">
+        <input type="button" value="2" onclick="addToDisplayResult(value)">
+        <input type="button" value="3" onclick="addToDisplayResult(value)">
+        <input type="button" value="+" class="orange" onclick="addToDisplayResult(value)">
+    </div>
+    <div class="firstRow">
+        <input type="button" value="0" id="zero" onclick="addToDisplayResult(value)">
+        <input type="button" value="." onclick="addToDisplayResult(value)">
+        <input type="button" value="=" class="orange" id="equal" onclick="equalTo(value)">
+    </div>
+
+
+</div>
+
+
+    <script src="JavaScript.js"></script>
+</body>
+</html>
